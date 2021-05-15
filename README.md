@@ -1,2 +1,5 @@
-# sonificationguide.github.io
-GitHub hosting for Sonification Guide website.
+# Sonification Guide
+
+Welcome to the Sonification Guide website. 
+
+Enter <a href="wwww.sonificationguide.com">HERE</a>
