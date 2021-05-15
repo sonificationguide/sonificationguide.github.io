@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Website made by Oliver Clarke, 2021.
+    -->
+
+    <title>Sonification</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-lwght bg-light">
+    <a class="navbar-brand">Sonification</a>
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center justify-content-end" id="navbarContent">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link mx-4 isDisabled" href="./Home.html">Home</a>
+
+            <div class="dropdown">
+
+                <a class="nav-item nav-link mx-4" href="./Techniques.html" class="dropdown-button">Sonification
+                    Techniques</a>
+                <ul class="dropdown-content">
+                    <li><a class="nav-item nav-link" href="./Techniques.html">Overview</a></li>
+                    <li><a class="nav-item nav-link" href="./Audification.html">Audification</a></li>
+                    <li><a class="nav-item nav-link" href="./AuditoryIcons.html">Auditory Icons</a></li>
+                    <li><a class="nav-item nav-link" href="./Earcons.html">Earcons</a></li>
+                    <li><a class="nav-item nav-link" href="./ParameterMapping.html">Parameter Mapping</a></li>
+                    <li><a class="nav-item nav-link" href="./ModelBased.html">Model-based</a></li>
+                </ul>
+
+            </div>
+            <a class="nav-item nav-link mx-4" href="./Research.html">Research</a>
+            <a class="nav-item nav-link mx-4" href="./Resources.html">Resources</a>
+            <a class="nav-item nav-link mx-4"
+               href="mailto:<odjc500@york.ac.uk?subject=Sonification Website">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<!-- First Container -->
+<div class="container">
+
+    <br>
+    <h3 class="margin">Abstract</h3>
+
+    <p>
+        This website is designed as an educational tool and guide to sonification. It includes information on techniques
+        used, learning resources and research within the field of sonification. It also explores relevant projects and
+        contains interactive demos available in iOS.
+    </p>
+
+    <hr>
+
+    <h3 class="margin">Introduction</h3>
+
+    <p class="mainText">
+        Visual representations are considered to be the usual method for interpreting large datasets. Generally, visual
+        representations consist of graphs, diagrams or spectrograms. However, we do not interpret information in the
+        world using only vision and hearing is one of the many human senses used for interpretation.
+    </p>
+
+    <p class="mainText">
+        The earliest use of sound to convey information is thought to have existed within Ancient Egypt. According to
+        Brown \cite{Boyd}, Ancient Egyptian auditors compared the ‘soundness’ of commodities moving in and out of stores
+        to ensure fair trading. While this is a primitive example, the acknowledgement of sound to convey information
+        and research into the field of sonification has only been around for roughly 25 years \cite{Worrall}. Visual
+        representations have been used for a longer period of time than auditory representations due to audio technology
+        only developing since the 19th century such as the invention of the Reis Transmitter by Johann Philipp Reis in
+        1862 \cite{aes}. The Reis Transmitter, shown in figure \ref{fig:reis}, is regarded as one of the earliest
+        developments of a telephone-like device \cite{notBell}.
+    </p>
+
+    <img alt="The Reis Transmitter" class="IMGequation" src="Images/reis.png">
+
+    <br>
+
+    <h6 class="margin">Sketch of the Reis Transmitter.</h6>
+
+    <br>
+
+    <p class="mainText">
+        Visual displays have been around much longer than computer audio cards. The earliest visual monitors date back
+        to the 1970s, around 20 years before the first audio cards in the 1990s and further real-time sound processing
+        capabilities in the 21st century.
+    </p>
+
+
+    <p class="mainText">
+        The terms ‘sonification’, ‘auditory display’ and ‘data sonification’ are used interchangeably within research
+        articles and journals. All three terms are used to express methods to represent information as sound
+        \cite{Worrall}.
+    </p>
+
+    <p class="mainText">
+        There have been many attempts to define sonification. Notably in 1999, Gregory Kramer defined sonification as:
+    </p>
+
+    <p class="quote">
+        "The use of non-speech audio to convey information. More specifically, sonification is the transformation of
+        data
+        relations into perceived relations in an acoustic signal for the purposes of facilitating communication or
+        interpretation."
+    </p>
+
+    <p class="mainText">
+        Speech audio is likely discarded in this definition to differentiate between techniques related to
+        speech-related practices. Such as linguistics and text-to-speech communication. However, Thomas Hermann
+        \cite{Hermann} and David Worrall \cite{Worrall} argue that there is no necessity to remove speech audio. This is
+        because while speech is not directly sonification itself, speech can be data-driven to become a sonification
+        tool. Worrall defines data sonification as:
+    </p>
+
+    <p class="quote">
+        “Data sonification is the acoustic representation of informational data for relational non-linguistic
+        interpretation by listeners, in order that they might increase their knowledge of the source from which the data
+        was acquired.”
+
+    </p>
+
+    <p class="mainText">
+        Worrall’s definition is more refined and is a modern accepted definition of what he refers to as Data
+        Sonification. Hermann suggests there are two requirements for a sound to be called a sonification
+        \cite{Hermann}:
+    </p>
+
+
+    <ol class="quote">
+        <li>“The sound is synthesized depending upon the data of the domain under study, and”</li>
+
+        <li>“The intention for generating the sound is to learn something about the data by listening to it. The sound
+            is
+            only regarded as the medium of communication.”
+        </li>
+    </ol>
+
+    <p class="mainText">
+        Unfortunately, the usefulness of auditory displays are often questioned and they are still considered a
+        ‘gimmick’ by some. This website does not intend to change opinions but rather introduce the techniques to young
+        engineers and encourage sonification use as an analysis tool.
+    </p>
+
+</div>
+
+<br>
+<!-- Footer -->
+<footer class="container text-center">
+    <p>Copyright © 2021 Oliver Clarke & Others</p>
+</footer>
+
+</html>
